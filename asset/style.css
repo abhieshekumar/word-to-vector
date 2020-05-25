@@ -31,7 +31,8 @@ body, .wrapper {
   font-weight: 400;;
   padding-bottom: 10px;
   padding-left: 50px;
-  width: calc(100vw - 100px); 
+  width: calc(100vw - 100px);
+  background: none;
 }
 
 @media only screen and (max-width: 500px) {
