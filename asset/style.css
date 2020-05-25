@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --animate-duration: 700ms;
+}
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
+body, .wrapper {
+  height: 100vh;
+}
+
+.input {
+  width: fit-content;
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.input form>input {
+  font-size: 10vh;
+  width: auto;
+  font-family: 'DM Mono', monospace;
+  font-weight: 400;;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  width: calc(100vw - 100px); 
+}
+
+@media only screen and (max-width: 500px) {
+  .input form>input {
+    font-size: 5vh;
+  }
+}
+
+.words {
+  background-color: #8842d5;
+  height: 70%;
+  width: 100vw;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+.word {
+  color: white;
+  font-family: 'DM Mono', monospace;
+  width: fit-content;
+  font-size: 8vh;
+  padding: 10px 15px;
+}
+
+#wordWrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 35px;
+}
+
+/* Tooltip text - W3C */
+.tooltiptext {
+  font-size: 18px;
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+  margin-left: -150px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltiptextshow {
+  visibility: visible;
+  opacity: 0.7;
+}

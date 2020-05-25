@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+	<link href="./asset/style.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="input" id="inputSection">
+			<form onsubmit="getNearest();return false;" action="javascript:">
+				<input id="userinput" onfocus="document.querySelector('#inputSection').scrollIntoView()" type= "text" maxlength="41" pattern="^[a-zA-Z]{1,20}[+-]?[a-zA-Z]{1,20}$">
+			</form>
+		</div>
+		<div class="words" id="words">
+			<div id="wordWrapper">
+				<div class="word" id="initialLoader">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="./asset/script.js"></script>
+</html>
