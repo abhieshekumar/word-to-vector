@@ -72,7 +72,7 @@ function justWord(word) {
 
 async function placeholderUpdate() {
   await sleep(1000);
-  const msg = ["try a word", "fun+games", "day-work"];
+  const msg = ["try a word", "try fun+games", "try day-work"];
   const ele = document.querySelector('#userinput');
   ele.value = "";
   if(currMsgInd>=msg.length) {
