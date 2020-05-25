@@ -4,6 +4,10 @@
 * Word Embedding represents words as vector.
 * Read about word embedding in this [article](https://gist.github.com/aparrish/2f562e3737544cf29aaf1af30362f469) by Allison Parrish.
 
+## Visit the project
+
+* https://abhieshekumar.github.io/word-to-vector/
+
 ## The project allows to
 
 * View the five nearest words for a given word.
